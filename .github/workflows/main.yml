@@ -4,16 +4,58 @@ on:
   push:
 
 jobs:
-  demo-job:
+  build:
     runs-on: ubuntu-latest
     steps:
       #----------------------
       # First Step
       #----------------------
       - name: Step-1
-        run: echo "First Step"
+        run: echo "Build-First Step."
+      #----------------------
+      # Second Step
+      #----------------------
+      - name: Step-2
+        run: echo "Build-Second Step."
+
+  test:
+    runs-on: ubuntu-latest
+    steps:
       #----------------------
       # First Step
       #----------------------
+      - name: Step-1
+        run: echo "Test-First Step."
+      #----------------------
+      # Second Step
+      #----------------------
       - name: Step-2
-        run: echo "Second Step"
+        run: echo "Test-Second Step."
+
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      #----------------------
+      # First Step
+      #----------------------
+      - name: Step-1
+        run: echo "Deploy-First Step."
+      #----------------------
+      # Second Step
+      #----------------------
+      - name: Step-2
+        run: echo "Deploy-Second Step."
+
+  notify:
+    runs-on: ubuntu-latest
+    steps:
+      #----------------------
+      # First Step
+      #----------------------
+      - name: Step-1
+        run: echo "Notify-First Step."
+      #----------------------
+      # Second Step
+      #----------------------
+      - name: Step-2
+        run: echo "Notify-Second Step."
